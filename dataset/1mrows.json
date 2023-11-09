@@ -1,0 +1,425 @@
+{
+	"name": "1mrows",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "1mrowsfile.csv",
+				"container": "datasource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "AGE",
+				"type": "String"
+			},
+			{
+				"name": "SEX",
+				"type": "String"
+			},
+			{
+				"name": "DZGROUP",
+				"type": "String"
+			},
+			{
+				"name": "DZCLASS",
+				"type": "String"
+			},
+			{
+				"name": "NUMCO",
+				"type": "String"
+			},
+			{
+				"name": "EDU",
+				"type": "String"
+			},
+			{
+				"name": "INCOME",
+				"type": "String"
+			},
+			{
+				"name": "SCOMA",
+				"type": "String"
+			},
+			{
+				"name": "CHARGES",
+				"type": "String"
+			},
+			{
+				"name": "TOTCST",
+				"type": "String"
+			},
+			{
+				"name": "TOTMCST",
+				"type": "String"
+			},
+			{
+				"name": "AVTISST",
+				"type": "String"
+			},
+			{
+				"name": "RACE",
+				"type": "String"
+			},
+			{
+				"name": "SPS",
+				"type": "String"
+			},
+			{
+				"name": "APS",
+				"type": "String"
+			},
+			{
+				"name": "SURV2M",
+				"type": "String"
+			},
+			{
+				"name": "SURV6M",
+				"type": "String"
+			},
+			{
+				"name": "HDAY",
+				"type": "String"
+			},
+			{
+				"name": "DIABETES",
+				"type": "String"
+			},
+			{
+				"name": "DEMENTIA",
+				"type": "String"
+			},
+			{
+				"name": "CA",
+				"type": "String"
+			},
+			{
+				"name": "PRG2M",
+				"type": "String"
+			},
+			{
+				"name": "PRG6M",
+				"type": "String"
+			},
+			{
+				"name": "DNR",
+				"type": "String"
+			},
+			{
+				"name": "DNRDAY",
+				"type": "String"
+			},
+			{
+				"name": "MEANBP",
+				"type": "String"
+			},
+			{
+				"name": "WBLC",
+				"type": "String"
+			},
+			{
+				"name": "HRT",
+				"type": "String"
+			},
+			{
+				"name": "RESP",
+				"type": "String"
+			},
+			{
+				"name": "TEMP",
+				"type": "String"
+			},
+			{
+				"name": "PAFI",
+				"type": "String"
+			},
+			{
+				"name": "ALB",
+				"type": "String"
+			},
+			{
+				"name": "BILI",
+				"type": "String"
+			},
+			{
+				"name": "CREA",
+				"type": "String"
+			},
+			{
+				"name": "SOD",
+				"type": "String"
+			},
+			{
+				"name": "PH",
+				"type": "String"
+			},
+			{
+				"name": "GLUCOSE",
+				"type": "String"
+			},
+			{
+				"name": "BUN",
+				"type": "String"
+			},
+			{
+				"name": "URINE",
+				"type": "String"
+			},
+			{
+				"name": "ADLP",
+				"type": "String"
+			},
+			{
+				"name": "ADLS",
+				"type": "String"
+			},
+			{
+				"name": "ADLSC",
+				"type": "String"
+			},
+			{
+				"name": "DEATH",
+				"type": "String"
+			},
+			{
+				"name": "HOSPDEAD",
+				"type": "String"
+			},
+			{
+				"name": "SFDM2",
+				"type": "String"
+			},
+			{
+				"name": "JSONDATA",
+				"type": "String"
+			},
+			{
+				"name": "JOINDATE",
+				"type": "String"
+			},
+			{
+				"name": "Q1",
+				"type": "String"
+			},
+			{
+				"name": "Q2",
+				"type": "String"
+			},
+			{
+				"name": "Q3",
+				"type": "String"
+			},
+			{
+				"name": "Q4",
+				"type": "String"
+			},
+			{
+				"name": "X1",
+				"type": "String"
+			},
+			{
+				"name": "X2",
+				"type": "String"
+			},
+			{
+				"name": "X3",
+				"type": "String"
+			},
+			{
+				"name": "X4",
+				"type": "String"
+			},
+			{
+				"name": "X5",
+				"type": "String"
+			},
+			{
+				"name": "X6",
+				"type": "String"
+			},
+			{
+				"name": "X7",
+				"type": "String"
+			},
+			{
+				"name": "X8",
+				"type": "String"
+			},
+			{
+				"name": "X9",
+				"type": "String"
+			},
+			{
+				"name": "X10",
+				"type": "String"
+			},
+			{
+				"name": "X11",
+				"type": "String"
+			},
+			{
+				"name": "X12",
+				"type": "String"
+			},
+			{
+				"name": "X13",
+				"type": "String"
+			},
+			{
+				"name": "X14",
+				"type": "String"
+			},
+			{
+				"name": "X15",
+				"type": "String"
+			},
+			{
+				"name": "X16",
+				"type": "String"
+			},
+			{
+				"name": "X17",
+				"type": "String"
+			},
+			{
+				"name": "X18",
+				"type": "String"
+			},
+			{
+				"name": "X19",
+				"type": "String"
+			},
+			{
+				"name": "X20",
+				"type": "String"
+			},
+			{
+				"name": "X21",
+				"type": "String"
+			},
+			{
+				"name": "X22",
+				"type": "String"
+			},
+			{
+				"name": "X23",
+				"type": "String"
+			},
+			{
+				"name": "X24",
+				"type": "String"
+			},
+			{
+				"name": "X25",
+				"type": "String"
+			},
+			{
+				"name": "X26",
+				"type": "String"
+			},
+			{
+				"name": "X27",
+				"type": "String"
+			},
+			{
+				"name": "X28",
+				"type": "String"
+			},
+			{
+				"name": "X29",
+				"type": "String"
+			},
+			{
+				"name": "X30",
+				"type": "String"
+			},
+			{
+				"name": "X31",
+				"type": "String"
+			},
+			{
+				"name": "X32",
+				"type": "String"
+			},
+			{
+				"name": "X33",
+				"type": "String"
+			},
+			{
+				"name": "X34",
+				"type": "String"
+			},
+			{
+				"name": "X35",
+				"type": "String"
+			},
+			{
+				"name": "X36",
+				"type": "String"
+			},
+			{
+				"name": "X37",
+				"type": "String"
+			},
+			{
+				"name": "X38",
+				"type": "String"
+			},
+			{
+				"name": "X39",
+				"type": "String"
+			},
+			{
+				"name": "X40",
+				"type": "String"
+			},
+			{
+				"name": "X41",
+				"type": "String"
+			},
+			{
+				"name": "X42",
+				"type": "String"
+			},
+			{
+				"name": "X43",
+				"type": "String"
+			},
+			{
+				"name": "X44",
+				"type": "String"
+			},
+			{
+				"name": "X45",
+				"type": "String"
+			},
+			{
+				"name": "X46",
+				"type": "String"
+			},
+			{
+				"name": "X47",
+				"type": "String"
+			},
+			{
+				"name": "X48",
+				"type": "String"
+			},
+			{
+				"name": "X49",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

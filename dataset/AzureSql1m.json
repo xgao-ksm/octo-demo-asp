@@ -1,0 +1,508 @@
+{
+	"name": "AzureSql1m",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "age",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "sex",
+				"type": "varchar"
+			},
+			{
+				"name": "dzgroup",
+				"type": "varchar"
+			},
+			{
+				"name": "dzclass",
+				"type": "varchar"
+			},
+			{
+				"name": "numco",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "edu",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "income",
+				"type": "varchar"
+			},
+			{
+				"name": "scoma",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "charges",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "totcst",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "totmcst",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "avtisst",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "race",
+				"type": "varchar"
+			},
+			{
+				"name": "sps",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "aps",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "surv2m",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "surv6m",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "hday",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "diabetes",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "dementia",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ca",
+				"type": "varchar"
+			},
+			{
+				"name": "prg2m",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "prg6m",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "dnr",
+				"type": "varchar"
+			},
+			{
+				"name": "dnrday",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "meanbp",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "wblc",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "hrt",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "resp",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "temp",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "pafi",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "alb",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "bili",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "crea",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "sod",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "ph",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "glucose",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "bun",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "urine",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "adlp",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "adls",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "adlsc",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "death",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "hospdead",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "sfdm2",
+				"type": "varchar"
+			},
+			{
+				"name": "jsondata",
+				"type": "varchar"
+			},
+			{
+				"name": "joindate",
+				"type": "date"
+			},
+			{
+				"name": "Q1",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Q2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Q3",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Q4",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X1",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X2",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X3",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X4",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X5",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X6",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X7",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X8",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X9",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X10",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X11",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X12",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X13",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X14",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X15",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X16",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X17",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X18",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X19",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X20",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X21",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X22",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X23",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X24",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X25",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X26",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X27",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X28",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X29",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X30",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X31",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X32",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X33",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X34",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X35",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X36",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X37",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X38",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X39",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X40",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X41",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X42",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X43",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X44",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X45",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X46",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X47",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X48",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "X49",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "demo_1mrows"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

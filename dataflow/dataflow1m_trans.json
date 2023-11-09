@@ -1,0 +1,231 @@
+{
+	"name": "dataflow1m_trans",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Snowflake1m",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "derivedAge"
+				},
+				{
+					"name": "aggregateSEX"
+				},
+				{
+					"name": "aggregateRACE"
+				},
+				{
+					"name": "surrogateKey1"
+				},
+				{
+					"name": "selectQ"
+				},
+				{
+					"name": "unpivotQ"
+				},
+				{
+					"name": "join1"
+				},
+				{
+					"name": "select1"
+				},
+				{
+					"name": "joinSexStatics"
+				},
+				{
+					"name": "joinRaceStatistic"
+				},
+				{
+					"name": "select2"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          AGE as string,",
+				"          SEX as string,",
+				"          DZGROUP as string,",
+				"          DZCLASS as string,",
+				"          NUMCO as string,",
+				"          EDU as string,",
+				"          INCOME as string,",
+				"          SCOMA as string,",
+				"          CHARGES as string,",
+				"          TOTCST as string,",
+				"          TOTMCST as string,",
+				"          AVTISST as string,",
+				"          RACE as string,",
+				"          SPS as string,",
+				"          APS as string,",
+				"          SURV2M as string,",
+				"          SURV6M as string,",
+				"          HDAY as string,",
+				"          DIABETES as string,",
+				"          DEMENTIA as string,",
+				"          CA as string,",
+				"          PRG2M as string,",
+				"          PRG6M as string,",
+				"          DNR as string,",
+				"          DNRDAY as string,",
+				"          MEANBP as string,",
+				"          WBLC as string,",
+				"          HRT as string,",
+				"          RESP as string,",
+				"          TEMP as string,",
+				"          PAFI as string,",
+				"          ALB as string,",
+				"          BILI as string,",
+				"          CREA as string,",
+				"          SOD as string,",
+				"          PH as string,",
+				"          GLUCOSE as string,",
+				"          BUN as string,",
+				"          URINE as string,",
+				"          ADLP as string,",
+				"          ADLS as string,",
+				"          ADLSC as string,",
+				"          DEATH as string,",
+				"          HOSPDEAD as string,",
+				"          SFDM2 as string,",
+				"          JSONDATA as string,",
+				"          JOINDATE as string,",
+				"          Q1 as string,",
+				"          Q2 as string,",
+				"          Q3 as string,",
+				"          Q4 as string,",
+				"          X1 as string,",
+				"          X2 as string,",
+				"          X3 as string,",
+				"          X4 as string,",
+				"          X5 as string,",
+				"          X6 as string,",
+				"          X7 as string,",
+				"          X8 as string,",
+				"          X9 as string,",
+				"          X10 as string,",
+				"          X11 as string,",
+				"          X12 as string,",
+				"          X13 as string,",
+				"          X14 as string,",
+				"          X15 as string,",
+				"          X16 as string,",
+				"          X17 as string,",
+				"          X18 as string,",
+				"          X19 as string,",
+				"          X20 as string,",
+				"          X21 as string,",
+				"          X22 as string,",
+				"          X23 as string,",
+				"          X24 as string,",
+				"          X25 as string,",
+				"          X26 as string,",
+				"          X27 as string,",
+				"          X28 as string,",
+				"          X29 as string,",
+				"          X30 as string,",
+				"          X31 as string,",
+				"          X32 as string,",
+				"          X33 as string,",
+				"          X34 as string,",
+				"          X35 as string,",
+				"          X36 as string,",
+				"          X37 as string,",
+				"          X38 as string,",
+				"          X39 as string,",
+				"          X40 as string,",
+				"          X41 as string,",
+				"          X42 as string,",
+				"          X43 as string,",
+				"          X44 as string,",
+				"          X45 as string,",
+				"          X46 as string,",
+				"          X47 as string,",
+				"          X48 as string,",
+				"          X49 as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     format: 'table') ~> source1",
+				"source1 derive(AGE = case(",
+				"    toFloat(AGE)<10, '<10',",
+				"    and(toFloat(AGE)>=10, toFloat(AGE)<=30) , '10-30',",
+				"    and(toFloat(AGE)>=30, toFloat(AGE)<=50) , '30-50',",
+				"    and(toFloat(AGE)>=50, toFloat(AGE)<=80) , '50-80',",
+				"    toFloat(AGE)>80, '>80'",
+				"",
+				")) ~> derivedAge",
+				"derivedAge aggregate(groupBy(SEX),",
+				"     DIABETESPROB_SEX = mean(toFloat(DIABETES)),",
+				"          GLUECOSELEVEL_SEX = mean(toFloat(GLUCOSE))) ~> aggregateSEX",
+				"derivedAge aggregate(groupBy(RACE),",
+				"     DIABETESPROB_RACE = mean(toFloat(DIABETES)),",
+				"          GLUCOSELEVEL_RACE = mean(toFloat(GLUCOSE))) ~> aggregateRACE",
+				"select2 keyGenerate(output(KEY as long),",
+				"     startAt: 1L,",
+				"     stepValue: 1L) ~> surrogateKey1",
+				"surrogateKey1 select(mapColumn(",
+				"          Q4,",
+				"          Q1,",
+				"          Q2,",
+				"          Q3,",
+				"          KEY",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> selectQ",
+				"selectQ unpivot(output(",
+				"          QNUMBER as string,",
+				"          QVALUE as string",
+				"     ),",
+				"     ungroupBy(KEY),",
+				"     lateral: false,",
+				"     ignoreNullPivots: false) ~> unpivotQ",
+				"select1, unpivotQ join(select1@KEY == unpivotQ@KEY,",
+				"     joinType:'outer',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> join1",
+				"surrogateKey1 select(mapColumn(",
+				"          each(match(name!='Q1'&&name!='Q2'&&name!='Q3'&&name!='Q4'))",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"derivedAge, aggregateSEX join(source1@SEX == aggregateSEX@SEX,",
+				"     joinType:'left',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> joinSexStatics",
+				"joinSexStatics, aggregateRACE join(source1@RACE == aggregateRACE@RACE,",
+				"     joinType:'left',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> joinRaceStatistic",
+				"joinRaceStatistic select(mapColumn(",
+				"          each(match(/* All input columns */true()),",
+				"               /* Input name */$$ = $$)",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select2",
+				"join1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
+			]
+		}
+	}
+}

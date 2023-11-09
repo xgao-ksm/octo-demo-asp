@@ -1,0 +1,418 @@
+{
+	"name": "AzureSql10m",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "AGE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SEX",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DZGROUP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DZCLASS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NUMCO",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EDU",
+				"type": "nvarchar"
+			},
+			{
+				"name": "INCOME",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SCOMA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CHARGES",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TOTCST",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TOTMCST",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AVTISST",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RACE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SPS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "APS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SURV2M",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SURV6M",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HDAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DIABETES",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DEMENTIA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRG2M",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PRG6M",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DNR",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DNRDAY",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MEANBP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WBLC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HRT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RESP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TEMP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PAFI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ALB",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BILI",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CREA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SOD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PH",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GLUCOSE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BUN",
+				"type": "nvarchar"
+			},
+			{
+				"name": "URINE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADLP",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADLS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ADLSC",
+				"type": "nvarchar"
+			},
+			{
+				"name": "DEATH",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HOSPDEAD",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SFDM2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JSONDATA",
+				"type": "nvarchar"
+			},
+			{
+				"name": "JOINDATE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Q1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Q2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Q3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Q4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X7",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X8",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X9",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X10",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X11",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X12",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X13",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X14",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X15",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X16",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X17",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X18",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X19",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X20",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X21",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X22",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X23",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X24",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X25",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X26",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X27",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X28",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X29",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X30",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X31",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X32",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X33",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X34",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X35",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X36",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X37",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X38",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X39",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X40",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X41",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X42",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X43",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X44",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X45",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X46",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X47",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X48",
+				"type": "nvarchar"
+			},
+			{
+				"name": "X49",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "demo_10mrows"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
