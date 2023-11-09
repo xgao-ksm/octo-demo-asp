@@ -1,0 +1,24 @@
+{
+	"name": "Trigger 3",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "sf_to_blob_1m_trans",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2023-11-09T12:30:00",
+				"timeZone": "Eastern Standard Time"
+			}
+		}
+	}
+}
